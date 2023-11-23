@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piki Bakery</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;1,300&display=swap"
+      rel="stylesheet" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start-->
+    <nav class="navbar">
+      <a href="" class="navbar-logo">Indi <span>Bakery</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i class="bi bi-search"></i></a>
+        <a href="#" id="shop"><i class="bi bi-cart2"></i></a>
+
+        <a href="#" id="hamburger"><i class="bi bi-list"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end-->
+
+    <!-- Hero section start -->
+    <section id="home" class="slider">
+      <!-- fade css -->
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>Baking the World New Classics</h1>
+          <p>Morning</p>
+          <p>Discover the finest flavors crafted with passion.</p>
+        </div>
+        <img src="./img/image1.jpg" />
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>Taste the goodness of our bakery</h1>
+          <p>Evening</p>
+          <p>Indulge in the warmth of our freshly baked treats.</p>
+        </div>
+        <img src="./img/image2.jpg" />
+      </div>
+
+      <div class="myslide fade">
+        <div class="txt">
+          <h1>Always fresh. Always delicious.</h1>
+          <p>Night</p>
+          <p>Savor the flavors of the night with our delectable creations.</p>
+        </div>
+        <img src="./img/image3.jpg" />
+      </div>
+
+      <!-- /fade css -->
+
+      <!-- onclick js -->
+      <a class="prev" onclick="plusSlides(-1)"
+        ><i class="bi bi-arrow-left-circle-fill"></i
+      ></a>
+      <a class="next" onclick="plusSlides(1)"
+        ><i class="bi bi-arrow-right-circle-fill"></i
+      ></a>
+
+      <div class="dotsbox" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <!-- /onclick js -->
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About Us section start -->
+    <section id="about" class="about">
+      <h2><span>About</span> Us</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/about-us.jpg" alt="About Us" />
+        </div>
+        <div class="content">
+          <h3>Why choose us?</h3>
+          <p>
+            At Piki Bakery, we are passionate about baking and committed to
+            delivering the finest pastries and bread. Our journey began with a
+            simple goal: to provide our community with fresh, delicious, and
+            high-quality baked goods.
+          </p>
+          <p>
+            With a team of skilled bakers and a dedication to using only the
+            finest ingredients, we create a variety of mouthwatering treats that
+            cater to every palate. From artisan bread to delightful pastries,
+            our bakery is a haven for those who appreciate the art of baking.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Us section end -->
+
+    <!-- Catalog section start -->
+    <section class="catalog" id="catalog">
+      <h2><span>Catalog</span> Us</h2>
+      <p>
+        Explore our delightful catalog of freshly baked goods. Each item is
+        crafted with precision and love to bring you the authentic taste of our
+        bakery.
+      </p>
+
+      <div class="row">
+        <div class="catalog-card">
+          <img class="catalog-card-img" src="img/catalog/1.jpg" alt="Challah" />
+          <h3 class="catalog-card-title">-- <span>Challah</span> --</h3>
+          <p class="catalog-card-price">USD 2</p>
+        </div>
+        <div class="catalog-card">
+          <img class="catalog-card-img" src="img/catalog/2.jpg" alt="Bagel" />
+          <h3 class="catalog-card-title">-- <span>Bagel</span> --</h3>
+
+          <p class="catalog-card-price">USD 4</p>
+        </div>
+        <div class="catalog-card">
+          <img
+            class="catalog-card-img"
+            src="img/catalog/3.jpg"
+            alt="Rye Dread" />
+          <h3 class="catalog-card-title">-- <span>Rye Dread</span> --</h3>
+          <p class="catalog-card-price">USD 7</p>
+        </div>
+        <div class="catalog-card">
+          <img
+            class="catalog-card-img"
+            src="img/catalog/4.jpg"
+            alt="Baguette" />
+          <h3 class="catalog-card-title">-- <span>Baguette</span> --</h3>
+          <p class="catalog-card-price">USD 3</p>
+        </div>
+        <div class="catalog-card">
+          <img
+            class="catalog-card-img"
+            src="img/catalog/5.jpg"
+            alt="Focaccia" />
+          <h3 class="catalog-card-title">-- <span>Focaccia</span> --</h3>
+          <p class="catalog-card-price">USD 1</p>
+        </div>
+        <div class="catalog-card">
+          <img
+            class="catalog-card-img"
+            src="img/catalog/6.jpg"
+            alt="Ciabatta" />
+          <h3 class="catalog-card-title">-- <span>Ciabatta</span> --</h3>
+          <p class="catalog-card-price">USD 5</p>
+        </div>
+        <div class="catalog-card">
+          <img
+            class="catalog-card-img"
+            src="img/catalog/7.jpg"
+            alt="Sourdough" />
+          <h3 class="catalog-card-title">-- <span>Sourdough</span> --</h3>
+          <p class="catalog-card-price">USD 4</p>
+        </div>
+        <div class="catalog-card">
+          <img class="catalog-card-img" src="img/catalog/8.jpg" alt="Zopf" />
+          <h3 class="catalog-card-title">-- <span>Zopf</span> --</h3>
+          <p class="catalog-card-price">USD 3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalog section end -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2><span>Contact</span> Us</h2>
+      <p>
+        Have a question or want to place an order? Feel free to get in touch
+        with us. We value your feedback and are here to assist you.
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31614.648335962112!2d110.21091449114118!3d-7.912711676331644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7afc24416fe261%3A0x4027a76e352fb60!2sKec.%20Lendah%2C%20Kabupaten%20Kulon%20Progo%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1674914538440!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"></iframe>
+        <form action="">
+          <div class="input-group">
+            <i class="bi bi-person"></i>
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="input-group">
+            <i class="bi bi-envelope"></i>
+            <input type="text" placeholder="Mail" />
+          </div>
+          <div class="input-group">
+            <i class="bi bi-telephone"></i>
+            <input type="text" placeholder="Phone Number" />
+          </div>
+          <div class="input-group">
+            <i class="bi bi-chat"></i>
+            <input type="textarea" placeholder="Message" />
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section End -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="#">Pak Piki</a> | &copy; 2023</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <!-- Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
